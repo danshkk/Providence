@@ -1,1 +1,23 @@
 // main: ./main.less
+
+.textStyle () {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: @textColor;
+    font-size: @textSize;
+    line-height: 1.4;
+}
+.titleStyle () {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    color: @titleColor;
+    font-size: @titleSize;
+    line-height: 1.2;
+}
+.miniText (@fontfam, @fontWeight, @fontColor) {
+    font-family: @fontfam;
+    font-weight: @fontWeight;
+    font-size: 12px;
+    color: @fontColor;
+    line-height: 1.8;
+}
