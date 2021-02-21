@@ -1,0 +1,38 @@
+// main: ./../main.less
+
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 220px;
+    padding-bottom: 165px;
+}
+.feature-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 110px;
+    &__title {
+        font-size: 2.6em;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        color: @titleColor;
+        margin-bottom: 45px;
+    }
+    &__text {
+        max-width: 555px;
+    }
+}
+.feature-right {
+    display: flex;
+    flex-direction: column;
+    &__title {
+        font-size: 2.6em;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        color: @titleColor;
+        margin-bottom: 45px;
+    }
+    &__text {
+        max-width: 555px;
+    }
+}

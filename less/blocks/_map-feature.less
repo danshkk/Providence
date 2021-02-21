@@ -1,0 +1,36 @@
+// main: ./../main.less
+
+.map-feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 200px 0;
+    &__wrapper-image {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1 0 60%;
+    }
+}
+.map-feature-about {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 30%;
+    padding-left: 85px;
+    &__title {
+        max-width: 285px;
+    }
+    &__text {
+        max-width: 475px;
+    }
+    &__partner {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__partner-link:first-child {
+        margin-right: 30px;
+    }
+}

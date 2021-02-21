@@ -1,0 +1,45 @@
+// main: ./../main.less
+.phone-feature {
+    display: flex;
+    flex-wrap: wrap;
+    &__wrapper-img {
+        display: flex;
+        flex: 0 0 60%;
+    }
+    &__container {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 120px;
+        // padding-left: 100px;
+        // margin-left: 100px;
+        flex: 1 0 40%;
+    }
+    &__title {
+        max-width: 230px;
+    }
+    &__text {
+        max-width: 470px;
+        margin: 75px 0 90px 0;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__btn-1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 202px;
+        text-align: left;
+        padding-left: 25px;
+        margin-right: 20px;
+    }
+    &__btn-2 {
+        width: 142px;
+        border: @darkBorderBtn;
+        color: @titleColor;
+    }
+}
