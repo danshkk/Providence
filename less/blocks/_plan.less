@@ -1,0 +1,116 @@
+// main: ./../main.less
+.plan {
+    background-color: #f4f4f5;
+    padding: 200px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.plan-about {
+    margin-right: 150px;
+    &__title {
+        width: 255px;
+        margin-bottom: 100px;
+    }
+    &__mini-text {
+        .miniText ();
+        margin-bottom: 20px;
+    }
+    &__btn {
+        width: 258px;
+        height: 50px;
+        border: @darkBorderBtn;
+        border-radius: 25px;
+    }
+    &__text {
+        width: 355px;
+        margin-top: 80px;
+        margin-bottom: 45px;
+    }
+    &__text-link {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: @textColor;
+        font-size: 1.4em;
+    }
+    &__link {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        color: @blueBtn;
+    }
+}
+.plan-pack {
+    display: flex;
+}
+.pack-start {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 50%;
+    padding: 65px 65px 65px 65px;
+    &__title {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 3.2em;
+        color: @titleColor;
+        margin-bottom: 110px;
+    }
+    &__text {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    &__plus {
+        margin-bottom: 100px;
+    }
+    &__item {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1.6em;
+        color: #26292c;
+        list-style-image: url(../../assets/images/plan-green--on.png);
+        &:first-child {
+            margin-bottom: 30px;
+        }
+    }
+}
+.pack-pro {
+    background-color: #ebebed;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 0 50%;
+    padding: 65px 65px;
+    transform: scale(0.9);
+    &__title {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 3.2em;
+        color: @titleColor;
+        margin-bottom: 110px;
+    }
+    &__text {
+        text-align: center;
+        max-width: 125px;
+        margin-bottom: 45px;
+    }
+    &__plus {
+        margin-bottom: 100px;
+    }
+    &__item {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1.6em;
+        color: #26292c;
+        list-style-image: url(../../assets/images/plan-green--on.png);
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

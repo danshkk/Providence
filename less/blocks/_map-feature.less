@@ -6,6 +6,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 200px 0;
+    background-color: #ffffff;
     &__wrapper-image {
         display: flex;
         justify-content: flex-end;
@@ -16,19 +17,28 @@
     align-self: stretch;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     flex: 1 0 30%;
     padding-left: 85px;
     &__title {
         max-width: 285px;
+        margin-bottom: 65px;
     }
     &__text {
         max-width: 475px;
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+    }
+    &__partner-title {
+        .miniText ();
+        margin-top: 65px;
     }
     &__partner {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: 30px;
     }
     &__partner-link:first-child {
         margin-right: 30px;

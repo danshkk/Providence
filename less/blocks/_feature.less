@@ -6,11 +6,15 @@
     justify-content: center;
     padding-top: 220px;
     padding-bottom: 165px;
+    background-color: #ffffff;
 }
 .feature-left {
     display: flex;
     flex-direction: column;
     margin-right: 110px;
+    & :nth-child(2) {
+        margin-bottom: 30px;
+    }
     &__title {
         font-size: 2.6em;
         font-family: 'Lato', sans-serif;
@@ -25,6 +29,9 @@
 .feature-right {
     display: flex;
     flex-direction: column;
+    & :nth-child(2) {
+        margin-bottom: 30px;
+    }
     &__title {
         font-size: 2.6em;
         font-family: 'Lato', sans-serif;
@@ -36,3 +43,4 @@
         max-width: 555px;
     }
 }
+
