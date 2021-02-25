@@ -47,18 +47,20 @@
     </header>
     <section class="feature">
         <div class="feature-left">
+            <object class="feature-left__img" type="image/svg+xml" data="./assets/images/feature-lock.svg" width="42" height="51"></object>
             <h4 class="feature-left__title">Real-time all the time</h4>
             <p class="feature-left__text text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
             <p class="feature-left__text text">Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.</p>
         </div>
         <div class="feature-right">
+            <object class="feature-right__img" type="image/svg+xml" data="./assets/images/feature-clock.svg" width="42" height="51"></object>
             <h4 class="feature-right__title">Adopt without any obstacles</h4>
             <p class="feature-right__text text">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
             <p class="feature-right__text text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
         </div>
     </section>
     <section class="phone-feature">
-        <div class="phone-feature__wrapper-img"><img src="./assets/images/phone-feature-bg_phone.png" alt=""></div>
+        <div class="phone-feature__wrapper-img"><img class="phone-feature__wrapper-image" src="./assets/images/phone-feature-bg_phone.png" alt=""></div>
         <div class="phone-feature__container">
             <h3 class="phone-feature__title title">Your day is protected</h3>
             <p class="phone-feature__text text">There have not been any since we have lived here, said my mother. <br> <br> We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
@@ -85,12 +87,22 @@
     </section>
     <section class="phone-screens">
         <h3 class="phone-screens__title title">Beautiful Interface</h3>
-        <!-- SLIDER -->
+        <h5 class="phone-screens__mini-text">LANDING SCREENS</h5>
+        <div class="phone-screens__wrapper">
+            <img class="phone-screens__img" src="./assets/images/phone-screen-1.png" alt="">
+            <img class="phone-screens__img" src="./assets/images/phone-screen-2.png" alt="">
+            <img class="phone-screens__img" src="./assets/images/phone-screen-main.png" alt="">
+            <img class="phone-screens__img" src="./assets/images/phone-screen-3.png" alt="">
+            <img class="phone-screens__img" src="./assets/images/phone-screen-4.png" alt="">
+        </div>
     </section>
     <section class="app">
         <img class="app__logo" src="./assets/images/NewProvidencelogo.png" alt="">
         <h3 class="app__title title">Get it to your smartphone </h3>
-        <input class="app__invite" type="e-mail" placeholder="Your e-mail">
+        <div class="app__wrapper">
+            <input class="app__invite" type="e-mail" placeholder="Your e-mail">
+            <button class="app__btn-invite btn btn--green">Send Invite</button>
+        </div>
         <h5 class="app__mini-title">OR DOWNLOAD FROM</h5>
         <button class="app__btn btn btn--black"><span class="app__mini-text">Download on the</span> <span class="app__maxi-text">App Store</span></button>
     </section>
@@ -106,7 +118,10 @@
         <div class="plan-about">
             <h3 class="plan-about__title title">Choose your perfect plan</h3>
             <h5 class="plan-about__mini-text">YOU ARE</h5>
-            <button class="plan-about__btn">INDIVIDUAL COMPANY</button><!-- BUTTON-SLIDER -->
+            <div class="plan-about__switch switch-btn">
+                <input type="checkbox">
+                <label><i></i></label>
+            </div>
             <div class="plan-about__container">
                 <p class="plan-about__text text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
                 <span class="plan-about__text-link">Have a bigger team? <a class="plan-about__link" href="">Let‘s talk</a></span>
@@ -137,7 +152,10 @@
     <footer class="footer">
         <div class="footer-top">
             <h3 class="footer-top__title title">Subscribe our newsletters</h3>
-            <input class="footer-top__subs" type="e-mail" placeholder="Your e-mail">
+            <div class="footer-top__wrapper">
+                <input class="footer-top__subs" type="e-mail" placeholder="Your e-mail">
+                <button class="footer-top__btn btn btn--green">Subscribe</button>
+            </div>
             <h5 class="footer-top__mini-text">We promise to never spam you.</h5>
         </div>
         <div class="footer-content">
