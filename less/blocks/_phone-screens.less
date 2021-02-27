@@ -17,15 +17,16 @@
     }
     &__wrapper {
         display: flex;
-        align-items: center;
-        width: 100%;
+        align-items:center;
+        overflow: hidden;
     }
     &__img {
-        max-width: max-content;
+        box-shadow: 3.4px 9.4px 16px 0 rgba(61, 61, 62, 0.15), 15px 41.3px 66px 0 rgba(92, 95, 101, 0.28);
+        width: 20%;
         margin-right: 30px;
-        :last-child {
-            margin-right: 0;
-        }
+    }
+    &__img-main {
+        box-shadow: none;
     }
 }
 

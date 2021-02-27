@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./libraries/WOW-master/css/libs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Document</title>
 </head>
 
@@ -43,6 +46,7 @@
             <h2 class="header-content__title title">What happens tomorrow?</h2>
             <p class="header-content__text text">The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.</p>
             <button class="header-content__btn btn">Watch Video</button>
+            <img class="header-content__img-phone wow animate__fadeInUp" data-wow-delay="0.5s" src="./assets/images/header-phone.png" alt="">
         </div>
     </header>
     <section class="feature">
@@ -91,7 +95,7 @@
         <div class="phone-screens__wrapper">
             <img class="phone-screens__img" src="./assets/images/phone-screen-1.png" alt="">
             <img class="phone-screens__img" src="./assets/images/phone-screen-2.png" alt="">
-            <img class="phone-screens__img" src="./assets/images/phone-screen-main.png" alt="">
+            <img class="phone-screens__img phone-screens__img-main" src="./assets/images/phone-screen-main.png" alt="">
             <img class="phone-screens__img" src="./assets/images/phone-screen-3.png" alt="">
             <img class="phone-screens__img" src="./assets/images/phone-screen-4.png" alt="">
         </div>
@@ -107,20 +111,74 @@
         <button class="app__btn btn btn--black"><span class="app__mini-text">Download on the</span> <span class="app__maxi-text">App Store</span></button>
     </section>
     <section class="customers">
-        <!-- SLIDER TOP -->
-        <div class="customers-bottom">
-            <h3 class="customers-bottom__title title"></h3>
-            <p class="customers-buttom__text text"></p>
-            <!-- STARS SVG-->
+        <!-- <div class="customers-slider-image">
+            <div class="customers-slider__item">
+                <div class="customers-slider__photo">
+                    <img src="./assets/images/customer-1.png" alt="">
+                </div>
+            </div>
+            <div class="customers-slider__item">
+                <div class="customers-slider__photo">
+                    <img src="./assets/images/customer-2.png" alt="">
+                </div>
+            </div>
+            <div class="customers-slider__item">
+                <div class="customers-slider__photo">
+                    <img src="./assets/images/customer-3.png" alt="">
+                </div>
+            </div>
+        </div> -->
+        <div class="customers-slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="customers-slider__item swiper-slide">
+                    <h3 class="customers-slider__title title">New Providence is the great UI kit </h3>
+                    <p class="customers-slider__text text text">“Just then her head struck against the roof of the hall:
+                        in fact she was now more than nine feet high, and she at once took up the little golden key and
+                        hurried off to the garden door.”</p>
+                    <div class="customers-slider__mark">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                    </div>
+                    <span class="customers-slider__author">Cameron Dowman</span>
+                </div>
+                <div class="customers-slider__item swiper-slide">
+                    <h3 class="customers-slider__title title">UI kit</h3>
+                    <p class="customers-slider__text text text">“Just then her head struck against the roof of the hall:
+                        in fact she was now more than nine feet high, and she at once took up the little golden key and
+                        hurried off to the garden door.”</p>
+                    <div class="customers-slider__mark">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                    </div>
+                    <span class="customers-slider__author">Monica Dowman</span>
+                </div>
+                <div class="customers-slider__item swiper-slide">
+                    <h3 class="customers-slider__title title">UI kit</h3>
+                    <p class="customers-slider__text text text">“Just then her head struck against the roof of the hall:
+                        in fact she was now more than nine feet high, and she at once took up the little golden key and
+                        hurried off to the garden door.”</p>
+                    <div class="customers-slider__mark">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                        <img src="./assets/images/StarIcon.png" alt="">
+                    </div>
+                    <span class="customers-slider__author">Nath Dowman</span>
+                </div>
+            </div>
         </div>
     </section>
     <section class="plan">
         <div class="plan-about">
             <h3 class="plan-about__title title">Choose your perfect plan</h3>
             <h5 class="plan-about__mini-text">YOU ARE</h5>
-            <div class="plan-about__switch switch-btn">
-                <input type="checkbox">
-                <label><i></i></label>
+            <div class="plan-about__button plan-button">
+                <button class="plan-about__btn1">Individual</button>
+                <button class="plan-about__btn2">Company</button>
             </div>
             <div class="plan-about__container">
                 <p class="plan-about__text text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
@@ -215,6 +273,12 @@
                 <a class="footer-bottom__link-img" href=""><img class="footer-bottom__img" src="./assets/images/footer-creater.png" alt=""></a>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./libraries/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW(). init ();
+    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
