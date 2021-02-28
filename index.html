@@ -111,23 +111,21 @@
         <button class="app__btn btn btn--black"><span class="app__mini-text">Download on the</span> <span class="app__maxi-text">App Store</span></button>
     </section>
     <section class="customers">
-        <!-- <div class="customers-slider-image">
-            <div class="customers-slider__item">
-                <div class="customers-slider__photo">
-                    <img src="./assets/images/customer-1.png" alt="">
+        <div class="customers-slider-img swiper-container">
+            <div class="swiper-wrapper customers-slider-img__wrapper">
+                <div class="customers-slider-img__item swiper-slide">
+                    <img class="customers-slider-img__avatar" src="./assets/images/customer-2.png" alt="">
+                </div>
+                <div class="customers-slider-img__item swiper-slide">
+                    <img class="customers-slider-img__avatar" src="./assets/images/customer-1.png" alt="">
+                </div>
+                <div class="customers-slider-img__item swiper-slide">
+                    <img class="customers-slider-img__avatar" src="./assets/images/customer-3.png" alt="">
                 </div>
             </div>
-            <div class="customers-slider__item">
-                <div class="customers-slider__photo">
-                    <img src="./assets/images/customer-2.png" alt="">
-                </div>
-            </div>
-            <div class="customers-slider__item">
-                <div class="customers-slider__photo">
-                    <img src="./assets/images/customer-3.png" alt="">
-                </div>
-            </div>
-        </div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
         <div class="customers-slider swiper-container">
             <div class="swiper-wrapper">
                 <div class="customers-slider__item swiper-slide">
@@ -186,15 +184,6 @@
             </div>
         </div>
         <div class="plan-pack">
-            <div class="plan-pack__start pack-start">
-                <h4 class="pack-start__title">Starter</h4>
-                <p class="pack-start__text text">Build your schedule every day</p>
-                <ul class="pack-start__plus">
-                    <li class="pack-start__item">Unlimeted events</li>
-                    <li class="pack-start__item">Connect Dropbox & Evernote</li>
-                </ul>
-                <button class="pack-start__btn btn btn--blue">Get started</button>
-            </div>
             <div class="plan-pack__pro pack-pro">
                 <h4 class="pack-pro__title">Pro</h4>
                 <p class="pack-pro__text text">Make your life better</p>
@@ -204,7 +193,16 @@
                     <li class="pack-pro__item">Personal Assistant</li>
                 </ul>
                 <button class="pack-pro__btn btn btn--border-blue">Make me a Pro</button>
-            </div>
+                </div>
+                <div class="plan-pack__start pack-start">
+                    <h4 class="pack-start__title">Starter</h4>
+                    <p class="pack-start__text text">Build your schedule every day</p>
+                    <ul class="pack-start__plus">
+                        <li class="pack-start__item">Unlimeted events</li>
+                        <li class="pack-start__item">Connect Dropbox & Evernote</li>
+                    </ul>
+                    <button class="pack-start__btn btn btn--blue">Get started</button>
+                </div>
         </div>
     </section>
     <footer class="footer">

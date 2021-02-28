@@ -39,8 +39,10 @@
 }
 .plan-pack {
     display: flex;
+    position: relative;
 }
 .pack-start {
+    order: 1;
     background-color: #ffffff;
     border-radius: 10px;
     display: flex;
@@ -48,6 +50,10 @@
     flex-direction: column;
     flex: 1 0 50%;
     padding: 65px 65px 65px 65px;
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+    box-shadow: 10.3px 28.2px 50px 0 rgba(92, 95, 101, 0.2);
     &__title {
         text-align: center;
         font-family: 'Lato', sans-serif;
@@ -75,6 +81,7 @@
     }
 }
 .pack-pro {
+    order: 2;
     background-color: #ebebed;
     border-radius: 10px;
     display: flex;
@@ -83,6 +90,9 @@
     flex: 1 0 50%;
     padding: 65px 65px;
     transform: scale(0.9);
+    position: relative;
+    right: 20px;
+    transition: 0.3s;
     &__title {
         text-align: center;
         font-family: 'Lato', sans-serif;
@@ -110,6 +120,30 @@
             margin-bottom: 0px;
         }
     }
+    &__btn {
+        background-color: transparent;
+    }
+}
+.pack-pro:hover {
+    right: 0px;
+    transform: scale(1);
+    background-color: #fff;
+    box-shadow: 10.3px 28.2px 50px 0 rgba(92, 95, 101, 0.2);
+}
+.pack-pro:hover + .pack-start {
+    transform: scale(0.8);
+    background-color: #ebebed;
+    left: 35px;
+    box-shadow: none;
+}
+.pack-pro:hover + .pack-start > .pack-start__btn {
+    background-color: transparent;
+    color: @blueBtn;
+    border: @blueBorderBtn;
+}
+.pack-pro:hover .pack-pro__btn {
+    background-color: @blueBtn;
+    color: #fff;
 }
 
 .plan-button {
@@ -143,59 +177,4 @@
     border-radius: 21px;
     background-color: transparent;
     font-size: 16px;
-}
-
-
-
-
-
-.buton{
-    border: 3px solid #1a1a1a;
-    display: inline-block;
-    padding: 10px;
-    position: relative;
-    text-align: center;
-    transition: background 600ms ease, color 600ms ease;
-}
-
-input[type="radio"].toggle {
-    display: none;
-    & + label{
-        cursor: pointer;
-        min-width: 60px;
-        &:hover{
-            background: none;
-            color: #1a1a1a;
-        }
-        &:after{
-            background: #1a1a1a;
-            content: "";
-            height: 100%;
-            position: absolute;
-            top: 0;
-            transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
-            width: 100%;
-            z-index: -1;
-        }
-    }
-    &.toggle-left + label {
-        border-right: 0;
-        &:after{
-            left: 100%
-        }
-    }
-    &.toggle-right + label{
-        margin-left: -5px;
-        &:after{
-            left: -100%;
-        }
-    }
-    &:checked + label {
-        cursor: default;
-        color: #fff;
-        transition: color 200ms;
-        &:after{
-            left: 0;
-        }
-    }
 }

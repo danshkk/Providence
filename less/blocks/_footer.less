@@ -57,17 +57,27 @@
     }
     &__text {
         max-width: 370px;
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
     &__link {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
     &__social {
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
-        opacity: 30%;
+        &-link {
+            margin-right: 35px;
+            opacity: 30%;
+            transition: 0.3s;
+            &:hover {
+                opacity: 100%;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }
 .footer-menu {
@@ -108,5 +118,21 @@
     }
     &__link {
         color: @blueBtn;
+        position: relative;
+    }
+    &__link-img {
+        position: relative;
+        &::before {
+            .miniText ();
+            font-size: 9px;
+            content: 'Made with Love by';
+            display: inline-block;
+            color: @titleColor;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            width: 105px;
+            transform: translate(-80%, -50%);
+        }
     }
 }
