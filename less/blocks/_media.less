@@ -1,0 +1,600 @@
+// main: ./../main.less
+
+
+/*PHONES*/
+
+@media screen and (max-width: 1550px) {
+    .header-content {
+        margin-top: 35px;
+        &__text {
+            margin-bottom: 40px;
+        }
+        &__btn {
+            margin-bottom: 45px;
+        }
+    }
+    .map-feature-about {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    // HEADER//
+    .title {
+        font-size: 5.8em;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-top {
+        position: relative;
+        padding: 70px 15px 0 15px;
+        &__logo {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -35%);
+        }
+        &__btn {
+            margin: 20px;
+        }
+    }
+    .burger-menu {
+        margin-left: 20px;
+    }
+    .header-content {
+        flex-grow: 1;
+        margin: 70px 0 0 0;
+        justify-content: center;
+        &__title {
+            padding-left: 15px;
+            font-size: 6.2em;
+        }
+        &__text {
+            padding: 0 15px;
+            margin-bottom: 40px;
+        }
+    }
+
+    // FEATURE
+    .feature {
+        padding: 40px 25px;
+        justify-content: space-between;
+    } 
+    .feature-left {
+        margin: 0;
+        &__img {
+            margin-bottom: 20px;
+        }
+        &__text {
+            max-width: 410px;
+        }
+    }
+    .feature-right {
+        &__img {
+            margin-bottom: 20px;
+        }
+        &__text {
+            max-width: 410px;
+        }
+    }
+
+    // PHONE FEATURE 
+    .phone-feature {
+        padding: 30px 10px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        &__wrapper-img {
+            flex: 0 0 50%;
+        }
+        &__wrapper-image {
+            width: 90%;
+        }
+        &__container {
+            padding-top: 0;
+        }
+        &__title {
+            max-width: 300px;
+        }
+        &__text {
+            margin: 50px 0;
+        }
+        &__buttons {
+            flex-direction: row;
+            align-items: center;
+        }
+        &__btn-1 {
+            margin-right: 25px;
+        }
+    }
+
+    // MAP-FEATURE
+    .map-feature {
+        padding: 50px 0;
+        &__wrapper-image {
+            width: 50%;
+            overflow: hidden;
+            justify-content: start;
+        }
+        &-about {
+            padding: 0 15px;
+            &__title {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    // PHONE-SCREEN 
+    .phone-screens {
+        &__wrapper {
+            overflow: scroll;
+        }
+        &__title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &__mini-text {
+            margin-bottom: 25px;
+        }
+        &__img {
+            width: 70%;
+        }
+    }
+    // APP
+    .app {
+        padding: 100px 0;
+        &__invite {
+            width: 350px;
+        }
+    }
+    // PLAN
+    .plan {
+        padding: 100px 10px 0px 10px;
+    }
+    .plan-about {
+        margin-right: 0;
+        &__title {
+            width: 355px;
+            margin-bottom: 75px;
+        }
+        &__text {
+            margin-top: 55px;
+            width: 330px;
+        }
+    }
+    .plan-pack {
+        overflow: scroll;
+        padding-bottom: 100px;
+        margin-top: 40px;
+    }
+    .plan-pack__start {
+    }
+    .plan-pack__pro {
+        &:hover {
+        }
+    }
+    // FOOTER 
+    .footer {
+        padding: 0 15px;
+        &-about__social {
+            justify-content: space-evenly;
+        }
+    }
+    .footer-top {
+        &__subs {
+            width: 350px;
+        }
+    }
+    .footer-content {
+        padding-top: 50px;
+    }
+    .footer-menu {
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-between;
+        padding: 0;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__more {
+            margin-right: 0;
+        }
+        &__about {
+            margin-right: 0;
+        }
+        &__support {
+            margin-right: 0;
+        }
+    }
+    .footer-bottom {
+        padding: 0;
+        &__link-img::before {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    // HEADER//
+    .title {
+        font-size: 5.8em;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-top {
+        position: relative;
+        padding-top: 70px;
+        &__logo {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -35%);
+        }
+        &__btn {
+            margin: 20px;
+        }
+    }
+    .burger-menu {
+        margin-left: 20px;
+    }
+    .header-content {
+        flex-grow: 1;
+        margin: 70px 0 0 0;
+        justify-content: center;
+        &__title {
+            padding-left: 15px;
+        }
+        &__text {
+            padding: 0 15px;
+            margin-bottom: 40px;
+        }
+    }
+
+    // FEATURE
+    .feature {
+        padding: 40px 25px;
+        justify-content: flex-start;
+    } 
+    .feature-left {
+        margin: 0;
+        &__img {
+            margin-bottom: 20px;
+        }
+    }
+    .feature-right {
+        &__img {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    // PHONE FEATURE 
+    .phone-feature {
+        padding: 30px 10px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        &__wrapper-img {
+            flex: 0 0 50%;
+        }
+        &__wrapper-image {
+            width: 90%;
+        }
+        &__container {
+            padding-top: 0;
+        }
+        &__title {
+            max-width: 300px;
+        }
+        &__text {
+            margin: 50px 0;
+        }
+        &__buttons {
+            flex-direction: row;
+            align-items: center;
+        }
+        &__btn-1 {
+            margin-right: 25px;
+        }
+    }
+
+    // MAP-FEATURE
+    .map-feature {
+        padding: 50px 0;
+        &__wrapper-image {
+            display: none;
+        }
+        &-about {
+            padding: 0 15px;
+            &__title {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    // PHONE-SCREEN 
+    .phone-screens {
+        &__wrapper {
+            overflow: scroll;
+        }
+        &__title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &__mini-text {
+            margin-bottom: 25px;
+        }
+        &__img {
+            width: 70%;
+        }
+    }
+    // APP
+    .app {
+        padding: 100px 0;
+        &__invite {
+            width: 350px;
+        }
+    }
+    // PLAN
+    .plan {
+        padding: 100px 10px 0px 10px;
+    }
+    .plan-about {
+        margin-right: 0;
+        &__title {
+            width: 355px;
+            margin-bottom: 75px;
+        }
+        &__text {
+            margin-top: 55px;
+            width: 330px;
+        }
+    }
+    .plan-pack {
+        overflow: scroll;
+        padding-bottom: 100px;
+        margin-top: 40px;
+    }
+    .plan-pack__start {
+    }
+    .plan-pack__pro {
+        &:hover {
+        }
+    }
+    // FOOTER 
+    .footer {
+        padding: 0 15px;
+        &-about__social {
+            justify-content: space-evenly;
+        }
+    }
+    .footer-top {
+        &__subs {
+            width: 350px;
+        }
+    }
+    .footer-content {
+        padding-top: 50px;
+    }
+    .footer-menu {
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-between;
+        padding: 0;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__more {
+            margin-right: 0;
+        }
+        &__about {
+            margin-right: 0;
+        }
+        &__support {
+            margin-right: 0;
+        }
+    }
+    .footer-bottom {
+        padding: 0;
+        &__link-img::before {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    // HEADER//
+    .title {
+        font-size: 5.5em;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-top {
+        position: relative;
+        padding-top: 50px;
+        &__logo {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+        }
+        &__btn {
+            margin: 20px;
+        }
+    }
+    .header-left__menu {
+        display: none;
+    }
+    .header-right__menu {
+        display: none;
+    }
+    .burger-menu {
+        margin-left: 20px;
+    }
+    .header-content {
+        flex-grow: 1;
+        margin: 0;
+        justify-content: center;
+        &__img-phone {
+            display: none;
+        }
+        &__title {
+            padding-left: 15px;
+        }
+        &__text {
+            padding: 0 15px;
+            margin-bottom: 40px;
+        }
+    }
+
+    // FEATURE
+    .feature {
+        padding: 40px 15px;
+    } 
+    .feature-left {
+        margin: 0;
+        &__img {
+            margin-bottom: 20px;
+        }
+    }
+    .feature-right {
+        &__img {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    // PHONE FEATURE 
+    .phone-feature {
+        padding: 30px 15px;
+        &__wrapper-img {
+            display: none;
+        }
+        &__container {
+            padding-top: 0;
+        }
+        &__title {
+            max-width: 300px;
+        }
+        &__text {
+            margin: 60px 0;
+        }
+        &__buttons {
+            flex-direction: column;
+        }
+        &__btn-1 {
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    // MAP-FEATURE
+    .map-feature {
+        padding: 50px 0;
+        &__wrapper-image {
+            display: none;
+        }
+        &-about {
+            padding: 0 15px;
+            &__title {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    // PHONE-SCREEN 
+    .phone-screens {
+        &__wrapper {
+            overflow: scroll;
+        }
+        &__title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &__mini-text {
+            margin-bottom: 25px;
+        }
+        &__img {
+            width: 70%;
+        }
+    }
+    // APP
+    .app {
+        padding: 100px 0;
+        &__invite {
+            width: 350px;
+        }
+    }
+    // PLAN
+    .plan {
+        padding: 100px 10px;
+    }
+    .plan-about {
+        margin-right: 0;
+        &__title {
+            width: 345px;
+            margin-bottom: 75px;
+        }
+        &__text {
+            margin-top: 55px;
+            width: 330px;
+        }
+    }
+    .plan-pack {
+        overflow: scroll;
+        margin: 50px 0;
+    }
+    .plan-pack__start {
+        box-shadow: none;
+    }
+    .plan-pack__pro {
+        &:hover {
+            box-shadow: none;
+        }
+    }
+    // FOOTER 
+    .footer {
+        padding: 0 15px;
+        &-about__social {
+            justify-content: space-evenly;
+        }
+    }
+    .footer-top {
+        &__subs {
+            width: 350px;
+        }
+    }
+    .footer-content {
+        padding-top: 50px;
+    }
+    .footer-menu {
+        width: 100%;
+        margin-top: 50px;
+        justify-content: space-between;
+        padding: 0;
+        &__title {
+            font-size: 1.2em;
+        }
+        &__more {
+            margin-right: 0;
+        }
+        &__about {
+            margin-right: 0;
+        }
+        &__support {
+            margin-right: 0;
+        }
+    }
+    .footer-bottom {
+        padding: 0;
+        &__link-img::before {
+            display: none;
+        }
+    }
+}
+
+
+

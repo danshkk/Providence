@@ -1,9 +1,10 @@
 // main: ./../main.less
 .customers-slider-img {
-    margin-bottom: 75px;
     &__avatar {
         border-radius: 50%;
         background-color: black;
+        width: 130px;
+        height: 130px;
     }
 }
 
@@ -23,7 +24,11 @@
     display: flex;
     justify-content: center;
     margin-right: 0;
+    padding-bottom: 75px;
 }
 .swiper-button-next::after, .swiper-button-prev::after {
     color: rgba(38, 41, 44, 0.2);
+}
+.swiper-slide-active > .customers-slider-img__avatar {
+    box-shadow: 13.7px 37.6px 40px 0 rgba(92, 95, 101, 0.28);
 }

@@ -1,6 +1,8 @@
 // main: ./../main.less
 .footer {
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 .footer-top {
     display: flex;
@@ -44,7 +46,7 @@
 .footer-content {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     padding-top: 90px;
     padding-bottom: 130px;
 }
@@ -82,6 +84,7 @@
 }
 .footer-menu {
     display: flex;
+    flex-wrap: wrap;
     &__title {
         font-family: 'Lato', sans-serif;
         font-weight: 700;
