@@ -12,6 +12,7 @@
         &__btn {
             margin-bottom: 45px;
         }
+
     }
     .map-feature-about {
         padding-left: 50px;
@@ -60,7 +61,11 @@
     // FEATURE
     .feature {
         padding: 40px 25px;
-        justify-content: space-between;
+        justify-content: center;
+        &__container {
+            justify-content: space-between;
+            width: 95%;
+        }
     } 
     .feature-left {
         margin: 0;
@@ -133,6 +138,9 @@
         &__title {
             text-align: center;
             margin-bottom: 50px;
+            &::before {
+                top: 130%;
+            }
         }
         &__mini-text {
             margin-bottom: 25px;
@@ -148,9 +156,23 @@
             width: 350px;
         }
     }
+    // CUSTOMERS 
+        .customers .swiper-button-next {
+            top: 35%;
+            right: 25px;
+        }
+        .customers .swiper-button-prev {
+            top: 35%;
+            left: 25px;
+        }
     // PLAN
     .plan {
         padding: 100px 10px 0px 10px;
+    }
+    .plan-about {
+        &__title {
+            font-size: 5.3em;
+        }
     }
     .plan-about {
         margin-right: 0;
@@ -169,10 +191,10 @@
         margin-top: 40px;
     }
     .plan-pack__start {
+        padding: 40px;
     }
     .plan-pack__pro {
-        &:hover {
-        }
+        padding: 40px;
     }
     // FOOTER 
     .footer {
@@ -255,18 +277,25 @@
 
     // FEATURE
     .feature {
-        padding: 40px 25px;
-        justify-content: flex-start;
+        padding: 40px 40px;
+        flex-direction: row;
+        justify-content: center;
+        &__container {
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 60px;
+            width: 100%;
+        }
     } 
     .feature-left {
-        margin: 0;
+        margin: 0 0 0 0;
         &__img {
             margin-bottom: 20px;
         }
     }
     .feature-right {
         &__img {
-            margin-top: 40px;
+            margin-top: 0px;
             margin-bottom: 20px;
         }
     }
@@ -336,6 +365,19 @@
         &__invite {
             width: 350px;
         }
+    }
+    // CUSTOMERS 
+    .customers-slider {
+        &__title {
+            max-width: 600px;
+            text-align: center;
+        }
+    }
+    .customers-slider-img > .swiper-button-next{
+        top: 38%;
+    }
+    .customers-slider-img > .swiper-button-prev {
+        top: 38%;
     }
     // PLAN
     .plan {
@@ -407,7 +449,7 @@
 @media screen and (max-width: 767px) {
     // HEADER//
     .title {
-        font-size: 5.5em;
+        font-size: 5.2em;
     }
     .header {
         display: flex;
@@ -443,7 +485,9 @@
             display: none;
         }
         &__title {
-            padding-left: 15px;
+            padding-left: 10px;
+            padding-right: 5px;
+            text-align: center;
         }
         &__text {
             padding: 0 15px;
@@ -513,6 +557,9 @@
         &__title {
             text-align: center;
             margin-bottom: 50px;
+            &::before {
+                top: 115%;
+            }
         }
         &__mini-text {
             margin-bottom: 25px;
@@ -528,6 +575,37 @@
             width: 350px;
         }
     }
+    // SLIDER CUSTOMERS 
+    .customers {
+        padding: 50px 15px;
+    }
+    .customers-slider-img {
+        padding-top: 50px;
+        &__avatar {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .customers-slider {
+        &__title {
+            font-size: 4.5em;
+            text-align: center;
+        }
+        &__text {
+            text-align: center;
+        }
+        &__item {
+        }
+        &__author {
+            margin-top: 30px;
+        }
+    }
+    .customers-slider-img > .swiper-button-next{
+        display: none;
+    }
+    .customers-slider-img > .swiper-button-prev {
+        display: none;
+    }
     // PLAN
     .plan {
         padding: 100px 10px;
@@ -537,6 +615,7 @@
         &__title {
             width: 345px;
             margin-bottom: 75px;
+            text-align: center;
         }
         &__text {
             margin-top: 55px;
@@ -568,7 +647,9 @@
         }
     }
     .footer-content {
-        padding-top: 50px;
+        width: 100%;
+        padding-top: 70px;
+        padding-bottom: 70px;
     }
     .footer-menu {
         width: 100%;
@@ -589,7 +670,7 @@
         }
     }
     .footer-bottom {
-        padding: 0;
+        padding: 20px 0;
         &__link-img::before {
             display: none;
         }

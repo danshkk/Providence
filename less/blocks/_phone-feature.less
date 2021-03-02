@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #ffffff;
+    padding-top: 85px;
     &__wrapper-img {
         display: flex;
         flex: 0 0 55%;
@@ -22,8 +23,6 @@
         flex-direction: column;
         justify-content: center;
         padding-top: 120px;
-        // padding-left: 100px;
-        // margin-left: 100px;
         flex: 1 0 45%;
     }
     &__title {
@@ -46,6 +45,19 @@
         text-align: left;
         padding-left: 25px;
         margin-right: 20px;
+        position: relative;
+        &::after {
+            content: '';
+            display: inline-block;
+            background-image:url(../../assets/images/phone-feature-arrow.png);
+            background-color: transparent;
+            width: 14px;
+            height: 13px;
+            position: absolute;
+            background-size: cover;
+            left: 80%;
+            top: 15px;
+        }
     }
     &__btn-2 {
         width: 142px;

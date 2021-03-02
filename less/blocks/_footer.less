@@ -44,11 +44,16 @@
 }
 
 .footer-content {
+    align-self: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 75%;
     flex-wrap: wrap;
     padding-top: 90px;
     padding-bottom: 130px;
+    border-radius: 0.5px;
+    border-top: 1px solid rgba(38, 41, 44, 0.1);
+    border-bottom: 1px solid rgba(38, 41, 44, 0.1);
 }
 .footer-about {
     display: flex;
@@ -101,6 +106,12 @@
     &__link {
         .textStyle ();
         font-size: 1.6em;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &:active {
+            transform: scale(1.2);
+        }
     }
     &__more {
         margin-right: 90px;

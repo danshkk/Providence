@@ -34,13 +34,13 @@
             <div class="header-top__right header-right">
                 <ul class="header-right__menu header-menu">
                     <li class="header-right__menu-item header-menu__item">
-                        <a class="header-menu__link header-right__menu-link" href="">Help</a>
+                        <a class="header-menu__link header-right__menu-link gray--text" href="">Help</a>
                     </li>
                     <li class="header-right__menu-item header-menu__item">
                         <a class="header-menu__link header-right__menu-link" href="">Contacts</a>
                     </li>
                 </ul>
-                <button class="header-top__btn btn btn--blue">Get App</button>
+                <button class="header-top__btn btn btn--blue wow animate__pulse" data-wow-iteration="infinite">Get App</button>
             </div>
         </div>
         <div class="header-content">
@@ -51,21 +51,23 @@
         </div>
     </header>
     <section class="feature">
-        <div class="feature-left">
-            <object class="feature-left__img" type="image/svg+xml" data="./assets/images/feature-lock.svg" width="42" height="51"></object>
-            <h4 class="feature-left__title">Real-time all the time</h4>
-            <p class="feature-left__text text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
-            <p class="feature-left__text text">Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.</p>
-        </div>
-        <div class="feature-right">
-            <object class="feature-right__img" type="image/svg+xml" data="./assets/images/feature-clock.svg" width="42" height="51"></object>
-            <h4 class="feature-right__title">Adopt without any obstacles</h4>
-            <p class="feature-right__text text">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
-            <p class="feature-right__text text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+        <div class="feature__container">
+            <div class="feature-left">
+                <object class="feature-left__img" type="image/svg+xml" data="./assets/images/feature-lock.svg" width="42" height="51"></object>
+                <h4 class="feature-left__title">Real-time all the time</h4>
+                <p class="feature-left__text text">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
+                <p class="feature-left__text text">Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.</p>
+            </div>
+            <div class="feature-right">
+                <object class="feature-right__img" type="image/svg+xml" data="./assets/images/feature-clock.svg" width="42" height="51"></object>
+                <h4 class="feature-right__title">Adopt without any obstacles</h4>
+                <p class="feature-right__text text">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                <p class="feature-right__text text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+            </div>
         </div>
     </section>
     <section class="phone-feature">
-        <div class="phone-feature__wrapper-img"><img class="phone-feature__wrapper-image" src="./assets/images/phone-feature-bg_phone.png" alt=""></div>
+        <div class="phone-feature__wrapper-img wow animate__fadeInLeft" data-wow-delay="0.5s"><img class="phone-feature__wrapper-image" src="./assets/images/phone-feature-bg_phone.png" alt=""></div>
         <div class="phone-feature__container">
             <h3 class="phone-feature__title title">Your day is protected</h3>
             <p class="phone-feature__text text">There have not been any since we have lived here, said my mother. <br> <br> We thought - Mr. Copperfield thought - it was quite a large rookery; but the nests were very old ones, and the birds have deserted them a long while.</p>
@@ -87,18 +89,18 @@
             </div>
         </div>
         <div class="map-feature__wrapper-image">
-            <img class="map-feature__wrapper-img" src="./assets/images/map-feature-dots.png" alt="">
+            <img class="map-feature__wrapper-img wow animate__fadeInRight" data-wow-delay="0.5s" src="./assets/images/map-feature-dots.png" alt="">
         </div>
     </section>
     <section class="phone-screens">
         <h3 class="phone-screens__title title">Beautiful Interface</h3>
         <h5 class="phone-screens__mini-text">LANDING SCREENS</h5>
         <div class="phone-screens__wrapper">
-            <img class="phone-screens__img" src="./assets/images/phone-screen-1.png" alt="">
-            <img class="phone-screens__img" src="./assets/images/phone-screen-2.png" alt="">
+            <img class="phone-screens__img wow animate__fadeInLeft" data-wow-delay="1s" src="./assets/images/phone-screen-1.png" alt="">
+            <img class="phone-screens__img wow animate__fadeInLeftBig" src="./assets/images/phone-screen-2.png" alt="">
             <img class="phone-screens__img phone-screens__img-main" src="./assets/images/phone-screen-main.png" alt="">
-            <img class="phone-screens__img" src="./assets/images/phone-screen-3.png" alt="">
-            <img class="phone-screens__img" src="./assets/images/phone-screen-4.png" alt="">
+            <img class="phone-screens__img wow animate__fadeInRightBig" src="./assets/images/phone-screen-3.png" alt="">
+            <img class="phone-screens__img wow animate__fadeInRight" data-wow-delay="1s" src="./assets/images/phone-screen-4.png" alt="">
         </div>
     </section>
     <section class="app">
@@ -109,7 +111,7 @@
             <button class="app__btn-invite btn btn--green">Send Invite</button>
         </div>
         <h5 class="app__mini-title">OR DOWNLOAD FROM</h5>
-        <button class="app__btn btn btn--black"><span class="app__mini-text">Download on the</span> <span class="app__maxi-text">App Store</span></button>
+        <button class="app__btn btn btn--black wow animate__pulse" data-wow-iteration="2"><span class="app__mini-text">Download on the</span> <span class="app__maxi-text">App Store</span></button>
     </section>
     <section class="customers">
         <div class="customers-slider-img swiper-container">
@@ -184,9 +186,10 @@
                 <span class="plan-about__text-link">Have a bigger team? <a class="plan-about__link" href="">Let‘s talk</a></span>
             </div>
         </div>
-        <div class="plan-pack">
+        <div class="plan-pack wow animate__fadeInRight" data-wow-offset="550" >
             <div class="plan-pack__pro pack-pro">
                 <h4 class="pack-pro__title">Pro</h4>
+                <div class="pack-pro__price">$4.99</div>
                 <p class="pack-pro__text text">Make your life better</p>
                 <ul class="pack-pro__plus">
                     <li class="pack-pro__item">Unlimeted events</li>
@@ -197,6 +200,7 @@
                 </div>
                 <div class="plan-pack__start pack-start">
                     <h4 class="pack-start__title">Starter</h4>
+                    <div class="pack-start__price">FREE</div>
                     <p class="pack-start__text text">Build your schedule every day</p>
                     <ul class="pack-start__plus">
                         <li class="pack-start__item">Unlimeted events</li>

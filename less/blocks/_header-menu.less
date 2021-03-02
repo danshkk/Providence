@@ -8,6 +8,17 @@
     font-size: 1.6em;
     &__link {
         color: @titleColor;
+        transition: 0.2s;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &:active {
+            transform: scale(1.2);
+        }
     }
+}
+
+.header-menu__item > .gray--text {
+    color: rgba(27, 28, 30, 0.4);
 }
 

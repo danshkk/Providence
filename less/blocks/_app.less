@@ -33,6 +33,19 @@
         position: absolute;
         top: 4px;
         right: 4px;
+        padding-right: 20px;
+        &::after {
+            content: '';
+            display: inline-block;
+            background-image:url(../../assets/images/phone-feature-arrow.png);
+            background-color: transparent;
+            width: 14px;
+            height: 13px;
+            position: absolute;
+            background-size: cover;
+            left: 80%;
+            top: 15px;
+        }
     }
     &__mini-title {
         .miniText();
