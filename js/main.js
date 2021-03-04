@@ -1,15 +1,17 @@
-var swiper = new Swiper('.customers-slider-img', {
+var swiper = new Swiper('.customers-slider', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
     slidesPerView: 3,
-    spaceBetween: 20,
+    spaceBetween: 0,
     centeredSlides: true,
     initialSlide: 1,
+    speed: 550,
+    height: 700,
+    setWrapperSize: true,
+    slideToClickedSlide: true,
 });
 
-var swiper = new Swiper('.customers-slider', {
-    slidesPerView: '1',
-});
+
 
